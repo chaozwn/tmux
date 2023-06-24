@@ -1,10 +1,3 @@
----
-title: tmux配置和使用
-date: 2023-05-09 12:06:09
-tags: ['tux']
-typora-root-url: ./tmux配置和使用
----
-
 ```shell
 curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz
 
@@ -13,7 +6,7 @@ curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzi
 If you want to use tmux-256color for all users, use sudo. The result is placed into /usr/share/terminfo:
 sudo /usr/bin/tic -xe tmux-256color terminfo.src
 ```
-##Tmux的配置和使用
+#Tmux的配置和使用
 
 #### 创建session
 
