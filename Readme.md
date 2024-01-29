@@ -5,8 +5,14 @@ This is my tmux configuration.
 ```shell
 brew install tmux
 git clone https://github.com/chaozwn/tmux.git ~/.config/tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
+Then
+```shell
+tmux
+```
+press `ctrl+t+I`
+
 ### 在.zshrc或者或者.bashrc中添加
 ```shell
 export TERM="xterm-256color"
