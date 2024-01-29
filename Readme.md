@@ -1,19 +1,15 @@
+# Introduction
+This is my tmux configuration.
+
+## Install
 ```shell
-curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz
-
-/usr/bin/tic -xe tmux-256color terminfo.src
-
-If you want to use tmux-256color for all users, use sudo. The result is placed into /usr/share/terminfo:
-sudo /usr/bin/tic -xe tmux-256color terminfo.src
+brew install tmux
+git clone https://github.com/chaozwn/tmux.git ~/.config/tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-
 ### 在.zshrc或者或者.bashrc中添加
 ```shell
-if [[ $TMUX != "" ]] then
-    export TERM="tmux-256color"
-else
-    export TERM="xterm-256color"
-fi
+export TERM="xterm-256color"
 ```
 
 #Tmux的配置和使用
