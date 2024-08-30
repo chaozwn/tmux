@@ -119,3 +119,25 @@ prefix n/prefix p
 prefix w
 ```
 
+#### tmux sessionx
+
+
+关于这个参数, 是<C-x>显示的路径
+```
+set -g @sessionx-x-path '~/.config'
+```
+
+- `alt+backspace` will delete the selected session
+- `Ctrl-u` scroll preview up
+- `Ctrl-d` scroll preview down
+- `Ctrl-n` select preview up
+- `Ctrl-p` select preview down
+- `Ctrl-f` create new tmux session with `zoxide`
+- `Ctrl-r` "read": will launch a read prompt to rename a session within the list
+- `Ctrl-w` "window": will reload the list with all the available windows and their preview
+- `Ctrl-x` will fuzzy read ~/.config or a configureable path of your choice (with @session-x-path)
+- `Ctrl-e` "expand": will expand PWD and search for local directories to create additional session from
+- `Ctrl-b` "back": reloads the first query. Useful when going into window or expand mode, to go back
+- `Ctrl-t` "tree": reloads the preview with the tree of sessions+windows familiar from the native session manager (C-S)
+- `Ctrl-/` "tmuxinator": fetches a list of tmuxinator sessions and previews them
+- `?` toggles the preview pane
